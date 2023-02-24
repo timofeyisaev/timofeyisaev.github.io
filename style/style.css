@@ -1,10 +1,17 @@
+body{
+    background-color: #f4f5f6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
 #root {
     background-image: url("../image/backgroundImage.webp");
-     margin: 0;
+    margin: 0;
     padding: 0;
-    
-    
-    
+   
 }
 
 
@@ -42,8 +49,9 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    height: min-content;
+    
     align-items: center;
+    
 }
 
 #progress{
@@ -62,8 +70,233 @@
     font-size: 40px;
     max-width: 700px;
     height: 300px;
-} 
+}
+
+.block{
+    background-color: #f4f5f6;
+    padding: 0 36px;
+    order: 1;
+}
+
+.companyBlock{
+    display: grid;
+    grid-template-columns: auto 440px;
+    column-gap: 140px;
+    box-sizing: border-box;
+}
+
+.companyBlockListItem{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #d5d7d9;
+    margin-bottom: 24px;
+}
+
+h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    color: black;
+    margin: 117px 284px 64px 36px;
+}
+
+h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 120%;
+    color: black;
+}
+
+.companyBlock {
+    background-color: #F4F5F6;
+    display: grid;
+    grid-template-columns: auto 440px;
+    column-gap: 140px;
+    box-sizing: border-box;
+}
+
+.companyBlockImg{
+    background-image: url('../image/main_block_img.jpg');
+    display: block;
+    width: 440px;
+    height: 590px;
+    background-size: cover;
+    margin: 20px 0 20px;
+}
+
+.companyBlockListItemDescr{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #707C88;
+}
 
 
+.serviceBlock{
+    box-sizing: border-box;
+    padding-top: 57px;
+    width: 1440px;
+    height: 889px;
+    
+   
+}
+
+.ourService{   
+    font-size: 48px;
+    /* margin: 0 0 24px 0; */
+    color: #212121;
+    letter-spacing: -0.02em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+}
+
+.serviceBlockContainer{
+    width: 100%;
+    font-family: 'Inter';
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-image: url('../image/bkg_services.jpg');
+    color: #fff;
+    width: 1440px;
+    height: 620px;
+    
+    
+}
+
+.serviceBlockContainer h3{
+    width: 648px;
+    height: 41px;
+    padding: 36px 0 0 36px;
+    color: #fff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 120%;
+
+}
+
+.serviceDescr{
+    width: 440px;
+    height: 75px;
+    padding: 36px 0 0 36px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.teamBlock{
+    width: 1440px;
+    height: 866px;
+    padding: 36px 36px 36px 36px;
+}
+
+.teamBlock h2 {
+    box-sizing: border-box;
+    margin: 57px 36px 109px 36px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 100%;
+    width: 204px;
+    height: 48px;
+    left: 36px;
+    top: 57px;
+}
+
+.teamBlock h4{
+    font: 'Inter';
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31.2px;
+}
+
+.teamHeader{
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    align-items: center;
+}
+
+.teamHeaderDescr{
+    width: 440px;
+    height: 93px;
+    left: 500px;
+    top: 57px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+}
+
+.switchButtons{
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-gap: 12px;
+    padding-top: 57px;
+    justify-self: end;
+}
+
+.roundButton{
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    font-size: 1px;
+    background: var(--gray );
+    background-image: url(/wp-content/themes/main/img/arrow_left.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+}
+
+.roundButton.right {
+    transform: rotate(180deg);
+}
+
+.employee{
+    display: grid;
+    grid-template-columns: 33% auto auto;
+    grid-gap: 12px;
+    width: 324px;
+    grid-auto-flow: row;
+    grid-auto-rows: min-content;
+}
+
+.employeeImage{
+    display: block;
+    content: '';
+    height: 360px;
+    width: 100%;
+    background-size: 100% auto;
+    background-position: 50% 50%;
+    left: 36px;
+    
+}
+
+#benson{
+    background-image: url(../image/richardbenson.jpg);    
+    height: 300px;
+    width: 200px;
+     
+    left: 36px;
+}
 
 
